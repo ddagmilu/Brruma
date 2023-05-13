@@ -1,0 +1,85 @@
+{
+  "type": {
+    "0": {
+      "name": "Echo Reply"
+    },
+    "3": {
+      "name": "Destination Unreachable",
+      "code": {
+        "0": "Net Unreachable",
+        "1": "Host Unreachable",
+        "2": "Protocol Unreachable",
+        "3": "Port Unreachable",
+        "4": "Fragmentation Needed and Don't Fragment was Set",
+        "5": "Source Route Failed",
+        "6": "Destination Network Unknown",
+        "7": "Destination Host Unknown",
+        "8": "Source Host Isolated",
+        "9": "Communication with Destination Network is Administratively Prohibited",
+        "10": "Communication with Destination Host is Administratively Prohibited",
+        "11": "Destination Network Unreachable for Type of Service",
+        "12": "Destination Host Unreachable for Type of Service",
+        "13": "Communication Administratively Prohibited",
+        "14": "Host Precedence Violation",
+        "15": "Precedence cutoff in effect"
+      }
+    },
+    "4": {
+      "name": "Source Quench"
+    },
+    "5": {
+      "name": "Redirect Message",
+      "code": {
+        "0": "Redirect Datagram for the Network (or subnet)",
+        "1": "Redirect Datagram for the Host",
+        "2": "Redirect Datagram for the Type of Service and Network",
+        "3": "Redirect Datagram for the Type of Service and Host"
+      }
+    },
+    "8": {
+      "name": "Echo Request"
+    },
+    "11": {
+      "name": "Time Exceeded",
+      "code": {
+        "0": "Time to Live exceeded in Transit",
+        "1": "Fragment Reassembly Time Exceeded"
+      }
+    },
+    "12": {
+      "name": "Parameter Problem",
+      "code": {
+        "0": "Pointer indicates the error",
+        "1": "Missing a Required Option",
+        "2": "Bad Length"
+      }
+    },
+    "13": {
+      "name": "Timestamp Request"
+    },
+    "14": {
+      "name": "Timestamp Reply"
+    },
+    "15": {
+      "name": "Information Request"
+    },
+    "16": {
+      "name": "Information Reply"
+    },
+    "17": {
+      "name": "Address Mask Request"
+    },
+    "18": {
+      "name": "Address Mask Reply"
+    },
+    "30": {
+      "name": "Traceroute",
+      "code": {
+        "0": "Information Request",
+        "1": "Information Reply",
+        "2": "Outbound Packet",
+        "3": "Return Packet"
+      }
+    }
+  }
+}

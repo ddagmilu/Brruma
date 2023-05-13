@@ -1,0 +1,146 @@
+{
+  "name": "Ethernet II",
+  "type": [ 12, 13, 16, "", 0 ],
+  "feld": {
+    "Destination MAC Address": [ 0, 5, 98, ":", 10 ],
+    "Source MAC Address": [ 6, 11, 98, ":", 10 ],
+    "Type": [ 12, 13, 16, "", 10 ]
+  },
+  "protocoles": {
+    "0800": {
+      "name": "IPv4",
+      "type": [ 23, 23, 0, "", 1 ],
+      "feld": {
+        "Version and Header Length": [ 14, 14, 210, "-", 11 ],
+        "Type of Service": [ 15, 15, 211, "", 11 ],
+        "Total Length": [ 16, 17, 10, "", 11 ],
+        "Identification": [ 18, 19, 1610, "", 11 ],
+        "Flags and Fragment Offset": {
+          "name": "Flags and Fragment Offset",
+          "type": [ 20, 21, 212, "", 11 ],
+          "feld": {
+            "Flags": [ 20, 20, 2121, "", 111, 4 ],
+            "Fragment Offset": [ 20, 21, 2122, "", 111, 4 ]
+          }
+        },
+        "Time to Live": [ 22, 22, 10, "", 11 ],
+        "Protocol": [ 23, 23, 10, "", 11 ],
+        "Header Checksum": [ 24, 25, 16, "", 11 ],
+        "Source IP Address": [ 26, 29, 100, ".", 11 ],
+        "Destination IP Address": [ 30, 33, 100, ".", 11 ]
+      },
+      "protocoles": {
+        "01": {
+          "name": "ICMP",
+          "type": [ 0, 0, 0, 0, 2 ],
+          "feld": {
+            "Type": [ 34, 34, 101, "", 12 ],
+            "Code": [ 35, 35, 102, "", 12 ],
+            "Checksum": [ 36, 37, 1610, "", 12 ]
+          }
+        },
+        "02": {
+          "name": "IGMP",
+          "type": [ 0, 0, 0, 0, 2 ]
+        },
+        "06": {
+          "name": "TCP",
+          "type": [ 0, 0, 0, 0, 2 ],
+          "feld": {
+            "Source Port": [ 34, 35, 300, "", 12 ],
+            "Destination Port": [ 36, 37, 300, "", 12 ],
+            "Sequence Number": [ 38, 41, 300, "", 12 ],
+            "Acknowledgment Number": [ 42, 45, 300, "", 12 ],
+            "Header Length": [ 46, 46, 301, "", 12 ],
+            "Flags": [ 47, 47, 302, "", 12 ],
+            "Window Size": [ 48, 49, 300, "", 12 ],
+            "Checksum": [ 50, 51, 1610, "", 12 ],
+            "Urgent Pointer": [ 52, 53, 10, "", 12 ]
+
+          }
+        },
+        "09": {
+          "name": "IGRP",
+          "type": [ 0, 0, 0, 0, 2 ]
+        },
+        "11": {
+          "name": "UDP",
+          "type": [ 0, 0, 0, 0, 2 ],
+          "feld": {
+            "Source Port": [ 34, 35, 300, "", 12 ],
+            "Destination Port": [ 36, 37, 300, "", 12 ],
+            "Length": [ 38, 39, 300, "", 12 ],
+            "Checksum": [ 40, 41, 1610, "", 12 ]
+          }
+        },
+        "2F": {
+          "name": "GRE"
+        },
+        "32": {
+          "name": "ESP"
+        },
+        "33": {
+          "name": "AH"
+        },
+        "39": {
+          "name": "SKIP"
+        },
+        "58": {
+          "name": "EIGRP"
+        },
+        "59": {
+          "name": "OSPF"
+        },
+        "73": {
+          "name": "L2TP"
+        }
+      }
+    },
+    "0806": {
+      "name": "ARP",
+      "type": [ 0, 0, 0, 0, 1 ],
+      "feld": {
+        "Hardware Type": [ 0, 1, 10, "", 11 ],
+        "Protocol Type": [ 2, 3, 10, "", 11 ],
+        "Hardware Address Length": [ 4, 4, 10, "", 11 ],
+        "Protocol Address Length": [ 5, 5, 10, "", 11 ],
+        "Operation": {
+          "name": "Operation",
+          "type": [ 6, 7, 10, "", 11 ],
+          "feld": {
+            "Request": [ 6, 7, 10, "", 111, 4 ],
+            "Reply": [ 6, 7, 10, "", 111, 4 ]
+          }
+        },
+        "Sender Hardware Address": [ 8, 13, 10, "", 11 ],
+        "Sender Protocol Address": [ 14, 17, 10, "", 11 ],
+        "Target Hardware Address": [ 18, 23, 10, "", 11 ],
+        "Target Protocol Address": [ 24, 27, 10, "", 11 ]
+      }
+    },
+    "8035": {
+      "name": "RARP"
+    },
+    "86DD": {
+      "name": "IPv6"
+    },
+    "8100": {
+      "name": "VLAN Tagged Frame"
+    },
+    "88A8": {
+      "name": "Provider Bridging (IEEE 802.1ad)"
+    },
+    "88E5": {
+      "name": "MAC Security (IEEE 802.1AE)"
+    },
+    "88F7": {
+      "name": "Precision Time Protocol (IEEE 1588)"
+    },
+    "8902": {
+      "name": "IEEE 802.1ag Connectivity Fault Management (CFM) Protocol / ITU-T Recommendation Y.1731 (OAM)"
+    },
+    "8914": {
+      "name": "FCoE Initialization Protocol (FIP)"
+    }
+  }
+}
