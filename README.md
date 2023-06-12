@@ -2,7 +2,7 @@
 
 A C# Packet sniffer that strictly uses WindowsForm, utilizing JSON maps to analyze packets 
 
-Designed for the Vulnerability and Security module in Master I at the University of Jijel. currently requires significant optimization. I may fix some flaws and optimize it in the future
+Designed for the Vulnerability and Security module in Master I at the University of Jijel. currently requires some optimization. I may fix some flaws in the future
 
 ## Screenshot
 ![Screenshot](https://i.imgur.com/FDWYCnJ.png)
